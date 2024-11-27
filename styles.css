@@ -1,0 +1,450 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: url(/back__ground.jpg) no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the entire screen */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between; /* Align logo to left and links to right */
+    align-items: center; /* Center vertically */
+    padding: 20px 40px; /* Add spacing around the header */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: fixed; /* Keep header fixed at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+  }
+
+  .logo a {
+  text-decoration: none; /* Removes underline */
+  color: white; /* Ensures the color matches the logo style */
+}
+
+.logo a:hover {
+  color: #ff6347; /* Optional hover effect for the logo link */
+}
+
+  
+  .auth-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .auth-links span {
+    color: white;
+  }
+  
+  .auth-links a:hover {
+    color: #ff6347; /* Change link color on hover */
+  }
+  
+  /* Main Content */
+  .main-content {
+    text-align: center;
+    margin-top: 200px; /* Push content below the header */
+  }
+  
+  .main-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff8484; /* Light pink color for the headline */
+  }
+  
+  .main-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ff6347; /* Button color */
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff8264; /* Slightly lighter shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Footer Styles */
+/* Footer Section Styling */
+.footer {
+    background: linear-gradient(to bottom, #003366, #8b0000); /* Navy to dark red gradient */
+        color: #fff;
+        padding: 40px 20px;
+        text-align: left;
+        margin-top: 40px; /* Adds space above the footer */
+    
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+    gap: 20px; /* Space between columns */
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #ff5e5e; /* Highlight color on hover */
+  }
+
+  /* Ensure full footer coverage */
+body, html {
+    height: 100%; /* Allow sections to fully render */
+  }
+  
+  /* Separator Above Footer */
+  .footer::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #ff5e5e; /* Highlight separator color */
+    margin-bottom: 20px; /* Space between separator and footer */
+  }
+  
+  /* Form Page Styles */
+.form-page h1 {
+    color: #ff6347; /* Same theme color as buttons */
+    margin-bottom: 10px;
+  }
+  
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .form-container label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-container input,
+  .form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #ff8264; /* Slightly lighter hover effect */
+  }
+
+  /* Login Page Styling */
+.form-page {
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  }
+  
+  .form-container label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    color: #ff8484; /* Light pink for labels */
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .form-container input:focus {
+    outline: none;
+    border: 2px solid #ff6347; /* Highlighted input border */
+  }
+  
+  .form-container button {
+    background-color: #ff6347; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #ff8264; /* Lighter shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .form-footer {
+    margin-top: 10px;
+  }
+  
+  .form-footer a {
+    color: #ff8484; /* Link color */
+    text-decoration: none;
+  }
+  
+  .form-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Registration Page Styling */
+.form-page {
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  }
+  
+  .form-container label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    color: #ff8484; /* Light pink for labels */
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .form-container input:focus {
+    outline: none;
+    border: 2px solid #ff6347; /* Highlighted input border */
+  }
+  
+  .form-container small {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .form-container button {
+    background-color: #ff6347; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #ff8264; /* Lighter shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .form-footer {
+    margin-top: 10px;
+  }
+  
+  .form-footer a {
+    color: #ff8484; /* Link color */
+    text-decoration: none;
+  }
+  
+  .form-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Blog Page Styles */
+.blog-page {
+    margin-top: 150px; /* Push content below the header */
+  }
+  
+  /* Featured Blog Section */
+  .featured-blog {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+  }
+  
+  .featured-blog h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .featured-article {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .featured-article img {
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .featured-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .featured-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff8484; /* Light pink */
+  }
+  
+  .featured-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Blog Grid Section */
+  .blog-grid {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+  }
+  
+  .blog-grid h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .blog-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+  }
+  
+  .blog-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .blog-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff8484;
+  }
+  
+  .blog-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card .read-more {
+    text-decoration: none;
+    color: #ff6347;
+    font-weight: bold;
+  }
+  
+  .blog-card .read-more:hover {
+    color: #ff8264;
+    text-decoration: underline;
+  }
+  

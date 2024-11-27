@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a New Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="index.html">blogmagazine</a>
+        </div>
+        <nav class="auth-links">
+          <a href="login_page.html">Login</a>
+          <span>|</span>
+          <a href="register.html">Register</a>
+        </nav>
+      </header>
+
+  <main class="main-content form-page">
+    <h1>Create a New Website</h1>
+    <p>Fill in the details below to start building your website.</p>
+    <form action="create_website.php" method="post" class="form-container">
+      <label for="website-name">Website Name:</label>
+      <input type="text" id="website-name" name="website-name" placeholder="Enter your website name" required>
+      
+      <label for="website-type">Website Type:</label>
+      <select id="website-type" name="website-type">
+        <option value="personal">Personal</option>
+        <option value="portfolio">Portfolio</option>
+        <option value="business">Business</option>
+      </select>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+
+      <button type="submit" class="btn">Create Website</button>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#support">Support</a></li>
+          <li><a href="#career">career</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Content</h3>
+        <ul>
+          <li><a href="#report-page">Report a page</a></li>
+          <li><a href="#report-blog">Report a blog / site</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>How to use Blogmagazine?</h3>
+        <ul>
+            <li><a href="new_website.html">Create a free website</a></li>
+            <li><a href="own_blog.html">Make your own blog</a></li>
+            <li><a href="business_website.html">Create a business website</a></li>
+            <li><a href="online_store.html">Create an online store</a></li>
+            <li><a href="mobile_website.html">Mobile website</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow us</h3>
+        <ul>
+          <li><a href="/www.facebook.com">Facebook</a></li>
+          <li><a href="/www.twitter.com">Twitter</a></li>
+          <li><a href="/www.instagram.com">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Languages</h3>
+        <ul>
+          <li><a href="#english">English</a></li>
+          <li><a href="#spanish">Español</a></li>
+          <li><a href="#portugese">Portugese</a></li>
+          <li><a href="#cestine">Cestina</a></li>
+          <li><a href="#deustech">Deustch</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
