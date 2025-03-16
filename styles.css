@@ -100,14 +100,19 @@
   
   /* Footer Styles */
 /* Footer Section Styling */
+/* Fixed Footer */
 .footer {
-    background: linear-gradient(to bottom, #003366, #8b0000); /* Navy to dark red gradient */
-        color: #fff;
-        padding: 40px 20px;
-        text-align: left;
-        margin-top: 40px; /* Adds space above the footer */
-    
-  }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, #003366, #8b0000); /* Navy to dark red gradient */
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  z-index: 1000;
+}
+
   
   .footer-container {
     display: grid;
